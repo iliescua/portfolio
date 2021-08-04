@@ -1,24 +1,23 @@
 {
-  "name": "simplefolio",
-  "version": "1.0.1",
+  "name": "portfolio",
+  "version": "1.0.0",
   "private": "true",
-  "description": "A clean, beautiful and responsive portfolio template for Developers!",
+  "description": "A website about myself and to show off my projects",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "webpack serve --config webpack.dev.js --open",
     "build": "webpack --config webpack.prod.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cobidev/simplefolio"
+    "url": "git+https://github.com/iliescua/portfolio"
   },
   "keywords": [],
-  "author": "Jacobo Martinez",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/cobidev/simplefolio/issues"
-  },
-  "homepage": "https://github.com/cobidev/simplefolio#readme",
+  "author": "Andrew Iliescu",
+  "license": "MIT",
+  "homepage": "https://iliescua.github.io/portfolio",
   "devDependencies": {
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^5.2.6",
@@ -39,6 +38,7 @@
   "dependencies": {
     "@popperjs/core": "^2.9.2",
     "bootstrap": "^5.0.2",
+    "gh-pages": "^3.2.3",
     "jquery": "^3.6.0",
     "popper.js": "^1.16.1",
     "tilt.js": "^1.2.1"
